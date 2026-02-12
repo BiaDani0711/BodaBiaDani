@@ -13,7 +13,7 @@ const $s = document.getElementById('cd-secs');
 if (!$d || !$h || !$m || !$s) {
   console.warn('[Countdown] Faltan nodos del contador. IDs esperados: cd-days, cd-hours, cd-mins, cd-secs');
 } else {
-  const pad = n => (n < 10 ? '0' + n : '' + n);
+  const pad = (n) => (n < 10 ? '0' + n : '' + n);
 
   function updateCountdown() {
     const now = Date.now();
@@ -47,7 +47,7 @@ if (!$d || !$h || !$m || !$s) {
 
 // (Opcional) animaciones de aparición si añadiste clases .reveal
 try {
-  const io = new IntersectionObserver((entries)=>{
+  const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
   }, { threshold: 0.15 });
 

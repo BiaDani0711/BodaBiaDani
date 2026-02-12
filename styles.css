@@ -10,6 +10,8 @@
 
 *{box-sizing:border-box}
 html,body{height:100%}
+html{ scroll-behavior: smooth; }
+
 body{
   margin:0;
   font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
@@ -108,8 +110,8 @@ h2{font-size: clamp(1.6rem, 3vw, 2.2rem)}
 /* MAPA CAJITA */
 .mapbox{
   display:grid; gap:1rem; grid-template-columns:1.2fr .8fr;
-  background:#fff; border-radius:var(--radius); box-shadow:var(--shadow);
-  overflow:hidden; margin-top:1rem;
+  background:#fff; border-radius:16px; box-shadow:0 12px 32px rgba(17,17,17,.08);
+  overflow:hidden; margin-top:1rem; border:1px solid #ececf4;
 }
 .mapbox iframe{
   width:100%; height:380px; border:0;

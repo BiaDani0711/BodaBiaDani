@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel & Nombre – Invitación</title>
+  <style>
+    body { font-family: sans-serif; margin:0; padding:0; }
+    section { padding:40px 20px; max-width:700px; margin:auto; }
+    h1, h2 { text-align:center; }
+  </style>
+</head>
+<body>
+
+<section id="inicio">
+  <h1>Daniel & Nombre</h1>
+  <p>Nos casamos 💍</p>
+</section>
+
+<section id="fa">
+  <h2>Preguntas frecuentes</h2>
+  <p><b>¿Cuándo?</b> 00/00/202X</p>
+  <p><b>¿Dónde?</b> Lugar del evento</p>
+</section>
+
+<section id="localizacion">
+  <h2>Localización</h2>
+  <iframe
+    src="TU_IFRAME_DE_GOOGLE_MAPS"
+ion>
+
+<section id="frases">
+  <h2>Nuestra historia</h2>
+  <p>Aquí puedes poner frases personalizadas...</p>
+</section>
+
+<section id="confirmacion">
+  <h2>Confirmar asistencia</h2>
+  <iframe src="URL_GOOGLE_FOR/section>
+
+</body>
+</html>

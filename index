@@ -2,41 +2,146 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel & Nombre – Invitación</title>
-  <style>
-    body { font-family: sans-serif; margin:0; padding:0; }
-    section { padding:40px 20px; max-width:700px; margin:auto; }
-    h1, h2 { text-align:center; }
-  </style>
-</head>
-<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel & Bia · 7 de noviembre de 2026</title>
+  <meta name="description" content="Invitación de boda de Daniel & Bia · 7 de noviembre de 2026 · Elche" />
+  <link rel="stylesheet" href="styles.css"JA -->
+  <header class="nav">
+    <div class="container nav__inner">
+      #inicioD & B</a>
+      <nav class="nav__links">
+        <a href="#istoria</a>
+        <faF&A</a>
+        #dressDress code</a>
+        <a href="#ización</a>
+      </nav>
+    </div>
+  </header>
 
-<section id="inicio">
-  <h1>Daniel & Nombre</h1>
-  <p>Nos casamos 💍</p>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero__bg" role="img" aria-label="Foto de portada"></div>
+    <div class="hero__content container">
+      <h1>Daniel & Bia</h1>
+      <p class="subtitle">¡Nos casamos! · 7 de noviembre de 2026 · Elche</p>
+
+      <!-- CUENTA ATRÁS -->
+      <div class="countdown" aria-live="polite">
+        <div class="time"><span id="cd-days">--</span><small>Días</small></div>
+        <div class="time"><span id="cd-hours">--</span><small>Horas</small></div>
+        <div class="time"><span id="cd-mins">--</span><small>Min</small></div>
+        <div class="time"><span id="cd-secs">--</span><small>Seg</small></div>
+      </div>
+
+      <a href="#ocalización</a>
+    </div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section id="historia" class="section">
+    <div class="container">
+      <h2>Nuestra historia</h2>
+      <p class="lead">
+        Un pequeño resumen de nuestra aventura juntos. Añade aquí un par de párrafos
+        con anécdotas, fechas clave o esa frase que os define.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Cómo empezó</h3>
+          <p>Breve texto. Mantén los párrafos cortos para una lectura cómoda en móvil.</p>
+        </article>
+        <article class="card">
+          <h3>La pedida</h3>
+          <p>Cuenta el momento especial. Puedes añadir una foto en esta tarjeta si quieres.</p>
+        </article>
+        <article class="card">
+          <h3>Lo que viene</h3>
+          <p>Detalles de la ceremonia, emociones y ganas de celebrarlo con los vuestros.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- F&A (ACORDEÓN) -->
+  <section id="fa" class="section alt">
+    <div class="container">
+      <h2>Preguntas & Respuestas</h2>
+
+      <details class="faq">
+        <summary>¿Cuándo es la boda?</summary>
+        <p>El <strong>7 de noviembre de 2026</strong>. La hora exacta la confirmaremos más adelante.</p>
+      </details>
+
+      <details class="faq">
+        <summary>¿Dónde es?</summary>
+        <p>En Elche. Más abajo tienes la localización exacta en el mapa.</p>
+      </details>
+
+      <details class="faq">
+        <summary>¿Hay dress code?</summary>
+        <p>Elegante cómodo. Evita el blanco total, porfa 💜.</p>
+      </details>
+
+      <details class="faq">
+        <summary>¿Niños?</summary>
+        <p>¡Bienvenidos! Avísanos si necesitas algo especial.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- DRESS CODE (BLOQUE VISUAL) -->
+  <section id="dress" class="section">
+    <div class="container">
+      <h2>Dress code</h2>
+      <div class="dress">
+        <div class="dress__tile">
+          <span class="emoji">👗</span>
+          <h3>Ella</h3>
+          <p>Formal / Cóctel. Colores suaves y otoñales quedan perfectos.</p>
+        </div>
+        <div class="dress__tile">
+          <span class="emoji">🤵</span>
+          <h3>Él</h3>
+          <p>Traje oscuro o chaqueta con pantalón. Toques en lila o vino suman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- MAPA (LA “CAJITA” BONITA) -->
+<section id="mapa" class="section alt">
+  <div class="container">
+    <h2>Localización</h2>
+    <p class="lead">Aquí nos vemos. Toca el mapa para abrirlo en tu Google Maps.</p>
+
+    <div class="mapbox">
+
+      <!-- IFRAME ACTUALIZADO -->
+      https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.896672154497!2d-0.1524619106643822!3d38.55919439908222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6204b256171e13%3A0xaf04922fa578b95b!2sMeli%C3%A1%20Villaitana!5e0!3m2!1sfr!2sfr!4v1770896760114!5m2!1sfr!2sfr
+      </iframe>
+
+      <div class="mapbox__info">
+        <h3>Meliá Villaitana</h3>
+        <p>Benidorm, Alicante</p>
+        https://www.google.com/maps?q=Meli%C3%A1+Villaitana
+          Abrir en Google Maps
+        </a>
+      </div>
+    </div>
+
+    <small class="map-hint">*Si no ves el mapa, revisa tu conexión o permisos de contenido.</small>
+  </div>
 </section>
 
-<section id="fa">
-  <h2>Preguntas frecuentes</h2>
-  <p><b>¿Cuándo?</b> 00/00/202X</p>
-  <p><b>¿Dónde?</b> Lugar del evento</p>
-</section>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Daniel & Bia · 07·11·2026</p>
+      <p>Hecho con ❤️ y GitHub Pages</p>
+    </div>
+  </footer>
 
-<section id="localizacion">
-  <h2>Localización</h2>
-  <iframe
-    src="TU_IFRAME_DE_GOOGLE_MAPS"
-ion>
-
-<section id="frases">
-  <h2>Nuestra historia</h2>
-  <p>Aquí puedes poner frases personalizadas...</p>
-</section>
-
-<section id="confirmacion">
-  <h2>Confirmar asistencia</h2>
-  <iframe src="URL_GOOGLE_FOR/section>
-
+  script.js</script>
 </body>
 </html>
+

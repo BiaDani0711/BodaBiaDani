@@ -74,3 +74,19 @@ margin:5px 0 0 0;
 font-size:16px;
 letter-spacing:2px;
 }
+
+@media (max-width: 600px){
+
+.countdown-container{
+gap:20px;
+}
+
+.time-box span{
+font-size:36px;
+}
+
+.time-box p{
+font-size:14px;
+}
+
+}

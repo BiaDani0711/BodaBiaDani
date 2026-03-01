@@ -35,3 +35,19 @@ font-size:22px;
 margin:5px;
 letter-spacing:2px;
 }
+
+.countdown{
+padding:80px 20px;
+text-align:center;
+background:#f7f7f7;
+}
+
+.countdown h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+#timer{
+font-size:28px;
+letter-spacing:2px;
+}

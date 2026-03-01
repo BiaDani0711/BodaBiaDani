@@ -30,7 +30,7 @@ document.getElementById("intro").style.opacity = "0";
 setTimeout(function(){
 document.getElementById("intro").style.display = "none";
 document.getElementById("website").style.display = "block";
-}, 600);
+}, 1200);
 
 };
 

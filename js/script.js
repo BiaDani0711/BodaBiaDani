@@ -16,3 +16,12 @@ document.getElementById("minutes").innerHTML = minutes;
 document.getElementById("seconds").innerHTML = seconds;
 
 }, 1000);
+
+const envelope = document.querySelector(".envelope");
+
+envelope.addEventListener("click", function(){
+
+document.getElementById("intro").style.display = "none";
+document.getElementById("website").style.display = "block";
+
+});

@@ -17,11 +17,21 @@ document.getElementById("seconds").innerHTML = seconds;
 
 }, 1000);
 
-const envelope = document.querySelector(".envelope");
+const video = document.getElementById("introVideo");
 
-envelope.addEventListener("click", function(){
+video.addEventListener("click", function(){
 
+video.play();
+
+video.onended = function(){
+
+document.getElementById("intro").style.opacity = "0";
+
+setTimeout(function(){
 document.getElementById("intro").style.display = "none";
 document.getElementById("website").style.display = "block";
+}, 600);
+
+};
 
 });

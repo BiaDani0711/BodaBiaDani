@@ -119,8 +119,24 @@ color:white;
 font-size:14px;
 letter-spacing:1px;
 text-align:center;
+animation:pulseText 2s infinite;
 }
 
+@keyframes pulseText{
+
+0%{
+opacity:0.3;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+opacity:0.3;
+}
+
+}
 
 #website{
 display:none;

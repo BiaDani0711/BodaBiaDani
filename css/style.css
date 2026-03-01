@@ -51,3 +51,26 @@ margin-bottom:30px;
 font-size:28px;
 letter-spacing:2px;
 }
+
+.countdown-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.time-box{
+text-align:center;
+}
+
+.time-box span{
+font-size:48px;
+font-weight:600;
+display:block;
+}
+
+.time-box p{
+margin:5px 0 0 0;
+font-size:16px;
+letter-spacing:2px;
+}

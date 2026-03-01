@@ -17,9 +17,10 @@ document.getElementById("seconds").innerHTML = seconds;
 
 }, 1000);
 
+const intro = document.getElementById("intro");
 const video = document.getElementById("introVideo");
 
-video.addEventListener("click", function(){
+intro.addEventListener("click", function(){
 
 video.play();
 

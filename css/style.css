@@ -26,15 +26,16 @@ animation:heroReveal 1.6s ease;
 }
 
 .hero h1{
-font-size:64px;
+font-family:'Great Vibes', cursive;
+font-size:72px;
 margin-bottom:10px;
-letter-spacing:3px;
+letter-spacing:2px;
 }
 
 .hero p{
-font-size:22px;
-margin:5px;
-letter-spacing:2px;
+font-size:20px;
+letter-spacing:3px;
+text-transform:uppercase;
 }
 
 .countdown{

@@ -38,6 +38,18 @@ letter-spacing:3px;
 text-transform:uppercase;
 }
 
+.hero-top{
+font-size:14px;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+.hero-date{
+margin-top:10px;
+font-size:18px;
+letter-spacing:3px;
+}
+
 .countdown{
 padding:80px 20px;
 text-align:center;
@@ -182,4 +194,20 @@ font-size:13px;
 .lang-btn.active{
 background:#8b6a4e;
 color:white;
+}
+
+.scroll-indicator{
+position:absolute;
+bottom:30px;
+font-size:28px;
+opacity:0.8;
+animation:scrollBounce 2s infinite;
+}
+
+@keyframes scrollBounce{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(10px);}
+100%{transform:translateY(0);}
+
 }

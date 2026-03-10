@@ -36,3 +36,29 @@ document.getElementById("website").style.display = "block";
 };
 
 });
+
+
+const buttons = document.querySelectorAll(".lang-btn");
+
+buttons.forEach(button => {
+
+button.addEventListener("click", () => {
+
+const lang = button.dataset.lang;
+
+buttons.forEach(btn => btn.classList.remove("active"));
+button.classList.add("active");
+
+document.querySelectorAll("[data-lang]").forEach(el => {
+
+if(el.dataset.lang === lang){
+el.style.display = "";
+}else{
+el.style.display = "none";
+}
+
+});
+
+});
+
+});

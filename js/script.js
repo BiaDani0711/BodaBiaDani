@@ -49,7 +49,7 @@ const lang = button.dataset.lang;
 buttons.forEach(btn => btn.classList.remove("active"));
 button.classList.add("active");
 
-document.querySelectorAll("[data-lang]").forEach(el => {
+document.querySelectorAll("[data-lang-text]").forEach(el => {
 
 if(el.dataset.lang === lang){
 el.style.display = "";

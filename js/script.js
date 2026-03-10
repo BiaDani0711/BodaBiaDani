@@ -40,18 +40,18 @@ document.getElementById("website").style.display = "block";
 
 const buttons = document.querySelectorAll(".lang-btn");
 
-buttons.forEach(button => {
+function setLanguage(lang){
 
-button.addEventListener("click", () => {
-
-const lang = button.dataset.lang;
-
-buttons.forEach(btn => btn.classList.remove("active"));
-button.classList.add("active");
+buttons.forEach(btn => {
+btn.classList.remove("active");
+if(btn.dataset.lang === lang){
+btn.classList.add("active");
+}
+});
 
 document.querySelectorAll("[data-lang-text]").forEach(el => {
 
-if(el.dataset.lang === lang){
+if(el.dataset.langText === lang){
 el.style.display = "";
 }else{
 el.style.display = "none";
@@ -59,6 +59,14 @@ el.style.display = "none";
 
 });
 
+}
+
+buttons.forEach(button => {
+
+button.addEventListener("click", () => {
+setLanguage(button.dataset.lang);
 });
 
 });
+
+setLanguage("es");

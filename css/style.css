@@ -25,6 +25,19 @@ color:white;
 animation:heroReveal 1.6s ease;  
 }
 
+.hero-names{
+font-family:'Great Vibes', cursive;
+font-size:72px;
+line-height:1.2;
+text-align:center;
+}
+
+.amp{
+display:block;
+font-size:40px;
+margin:5px 0;
+}
+
 .hero h1{
 font-family:'Great Vibes', cursive;
 font-size:72px;

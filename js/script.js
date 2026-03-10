@@ -70,3 +70,13 @@ setLanguage(button.dataset.lang);
 });
 
 setLanguage("es");
+
+const scrollButton = document.getElementById("scrollDown");
+
+scrollButton.addEventListener("click", function(){
+
+document.getElementById("countdown").scrollIntoView({
+behavior:"smooth"
+});
+
+});

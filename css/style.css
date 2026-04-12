@@ -256,3 +256,25 @@ border-radius:10px;
 overflow:hidden;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
+
+
+.welcome{
+padding:100px 20px;
+text-align:center;
+background:#f5efe7;
+}
+
+.welcome-title{
+font-family:'Great Vibes', cursive;
+font-size:48px;
+margin-bottom:30px;
+color:#8b6a4e;
+}
+
+.welcome-text{
+max-width:600px;
+margin:auto;
+font-size:18px;
+line-height:1.9;
+color:#6e5a47;
+}

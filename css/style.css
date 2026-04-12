@@ -224,3 +224,35 @@ animation:scrollBounce 2s infinite;
 100%{transform:translateY(0);}
 
 }
+
+.evento{
+padding:100px 20px;
+text-align:center;
+background:#ffffff;
+}
+
+.evento-title{
+font-family:'Great Vibes', cursive;
+font-size:48px;
+margin-bottom:30px;
+color:#8b6a4e;
+}
+
+.evento-info{
+margin-bottom:40px;
+}
+
+.evento-item p{
+margin:8px 0;
+font-size:18px;
+color:#6e5a47;
+letter-spacing:1px;
+}
+
+.mapa{
+max-width:800px;
+margin:auto;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}

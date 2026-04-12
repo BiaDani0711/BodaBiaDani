@@ -282,3 +282,68 @@ letter-spacing:0.5px;
 }
 
 
+.programa{
+padding:120px 20px;
+background:#f7f1ea;
+text-align:center;
+}
+
+.programa-title{
+font-family:'Great Vibes', cursive;
+font-size:48px;
+color:#8b6a4e;
+margin-bottom:10px;
+}
+
+.programa-date{
+margin-bottom:60px;
+color:#a1866f;
+letter-spacing:2px;
+}
+
+.timeline{
+position:relative;
+max-width:700px;
+margin:auto;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:50%;
+top:0;
+width:1px;
+height:100%;
+background:#d8cfc4;
+}
+
+.timeline-item{
+position:relative;
+width:50%;
+padding:20px 30px;
+box-sizing:border-box;
+}
+
+.timeline-item.left{
+left:0;
+text-align:right;
+}
+
+.timeline-item.right{
+left:50%;
+text-align:left;
+}
+
+.timeline-item .time{
+display:block;
+font-weight:600;
+margin-bottom:5px;
+color:#8b6a4e;
+}
+
+.timeline-item p{
+margin:0;
+color:#6e5a47;
+letter-spacing:1px;
+}
+

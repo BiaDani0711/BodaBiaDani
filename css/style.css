@@ -413,3 +413,52 @@ transform:translateY(0);
 }
 /*----------------cerramos sección programa*/
 
+/*----------------abrimos sección dress code*/
+
+.dresscode{
+padding:120px 20px;
+background:url("../images/fondo-boda.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+}
+
+.dresscode-card{
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(5px);
+padding:50px 30px;
+border-radius:20px;
+max-width:500px;
+width:100%;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.dresscode-title{
+font-family:'Great Vibes', cursive;
+font-size:42px;
+color:#8b6a4e;
+margin-bottom:30px;
+}
+
+.dresscode-block h3{
+font-family:'Great Vibes', cursive;
+font-size:28px;
+color:#8b6a4e;
+margin-bottom:10px;
+}
+
+.dresscode-block p{
+color:#6e5a47;
+font-size:16px;
+letter-spacing:1px;
+}
+
+.divider-line{
+width:60px;
+height:1px;
+background:#cbbfb3;
+margin:30px auto;
+}
+
+
+/*---------------- cerramos sección dress code*/

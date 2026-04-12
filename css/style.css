@@ -281,7 +281,7 @@ color:#7a6654;
 letter-spacing:0.5px;
 }
 
-
+/*----------------abrimos sección programa*/
 .programa{
 padding:90px 20px;
 background:#f7f1ea;
@@ -411,3 +411,5 @@ opacity:1;
 transform:translateY(0);
 }
 }
+/*----------------cerramos sección programa*/
+

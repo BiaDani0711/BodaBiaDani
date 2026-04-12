@@ -259,22 +259,39 @@ box-shadow:0 10px 30px rgba(0,0,0,0.1);
 
 
 .welcome{
-padding:100px 20px;
+padding:110px 20px;
 text-align:center;
-background:#f5efe7;
+background:#f7f1ea;
 }
 
 .welcome-title{
 font-family:'Great Vibes', cursive;
-font-size:48px;
-margin-bottom:30px;
-color:#8b6a4e;
+font-size:42px;
+margin-bottom:25px;
+color:#a1866f;
+opacity:0.9;
 }
 
 .welcome-text{
-max-width:600px;
+max-width:520px;
 margin:auto;
 font-size:18px;
-line-height:1.9;
-color:#6e5a47;
+line-height:2;
+color:#7a6654;
+letter-spacing:0.5px;
+}
+
+.welcome{
+animation:fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp{
+0%{
+opacity:0;
+transform:translateY(20px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
 }

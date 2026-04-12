@@ -283,7 +283,7 @@ letter-spacing:0.5px;
 
 
 .programa{
-padding:120px 20px;
+padding:90px 20px;
 background:#f7f1ea;
 text-align:center;
 }
@@ -303,7 +303,7 @@ letter-spacing:2px;
 
 .timeline{
 position:relative;
-max-width:700px;
+max-width:500px;
 margin:auto;
 }
 
@@ -320,7 +320,7 @@ background:#d8cfc4;
 .timeline-item{
 position:relative;
 width:50%;
-padding:20px 30px;
+padding:15px 20px;
 box-sizing:border-box;
 }
 
@@ -339,14 +339,15 @@ display:block;
 font-weight:600;
 margin-bottom:5px;
 color:#8b6a4e;
+font-size:14px;
 }
 
 .timeline-item p{
 margin:0;
 color:#6e5a47;
 letter-spacing:1px;
+font-size:15px;
 }
-
 
 
 .timeline-item::before{

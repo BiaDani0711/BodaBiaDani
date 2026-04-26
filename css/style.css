@@ -462,3 +462,50 @@ margin:30px auto;
 
 
 /*---------------- cerramos sección dress code*/
+/*---------------- abrimos sección transporte y alojamiento*/
+.travel{
+padding:110px 20px;
+background:#f7f1ea;
+text-align:center;
+}
+
+.travel-title{
+font-family:'Great Vibes', cursive;
+font-size:48px;
+color:#8b6a4e;
+margin-bottom:50px;
+}
+
+.travel-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.travel-card{
+background:white;
+padding:40px 30px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.travel-card h3{
+font-size:26px;
+margin-bottom:20px;
+color:#8b6a4e;
+}
+
+.travel-card p{
+line-height:1.9;
+color:#6e5a47;
+}
+
+.travel-card a{
+color:#8b6a4e;
+text-decoration:none;
+font-weight:600;
+}
+/*---------------- cerramos sección transporte y alojamiento*/
+

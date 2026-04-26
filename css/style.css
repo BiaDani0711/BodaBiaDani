@@ -507,5 +507,20 @@ color:#8b6a4e;
 text-decoration:none;
 font-weight:600;
 }
+
+.hotel-button{
+display:inline-block;
+margin:20px 0;
+padding:12px 24px;
+background:#8b6a4e;
+color:white !important;
+text-decoration:none;
+border-radius:30px;
+font-size:15px;
+}
+
+.hotel-button:hover{
+transform:translateY(-2px);
+}
 /*---------------- cerramos sección transporte y alojamiento*/
 

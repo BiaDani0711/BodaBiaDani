@@ -523,4 +523,35 @@ font-size:15px;
 transform:translateY(-2px);
 }
 /*---------------- cerramos sección transporte y alojamiento*/
+/*---------------- abrimos sección formulario*/
+.rsvp{
+padding:120px 20px;
+text-align:center;
+background:#ffffff;
+}
 
+.rsvp-title{
+font-family:'Great Vibes', cursive;
+font-size:48px;
+color:#8b6a4e;
+margin-bottom:20px;
+}
+
+.rsvp-text{
+max-width:600px;
+margin:auto;
+line-height:1.9;
+color:#6e5a47;
+}
+
+.rsvp-button{
+margin-top:35px;
+padding:14px 34px;
+border:none;
+border-radius:30px;
+background:#8b6a4e;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+/*---------------- cerramos sección formulario*/

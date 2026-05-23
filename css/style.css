@@ -743,3 +743,37 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 opacity:1;
 transform:translateY(0);
 }
+
+/* ===================== BOTÓN MÚSICA ===================== */
+.music-btn{
+position:fixed;
+bottom:30px;
+left:25px;
+width:42px;
+height:42px;
+border-radius:50%;
+border:1px solid var(--color-brown-light);
+background: var(--color-bg-cream);
+color: var(--color-brown);
+font-size:16px;
+cursor:pointer;
+z-index:9998;
+display:none;
+align-items:center;
+justify-content:center;
+transition: background 0.3s, color 0.3s;
+}
+
+.music-btn.active{
+display:flex;
+}
+
+.music-btn.muted{
+color: var(--color-brown-light);
+border-color:#cbbfb3;
+}
+
+.music-btn:hover{
+background: var(--color-brown);
+color:white;
+}

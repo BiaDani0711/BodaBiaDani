@@ -16,7 +16,7 @@ text-align:center;
 
 background:
 linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url("../images/hero1.jpeg");
+url("../images/hero.jpeg");
 
 background-size:cover;
 background-position:center;
@@ -64,58 +64,75 @@ letter-spacing:3px;
 }
 
 .countdown{
-padding:80px 20px;
+padding:90px 20px;
 text-align:center;
-background:#f7f7f7;
+background:#f5f0e8;
 }
 
-.countdown h2{
-font-size:32px;
-margin-bottom:30px;
+.countdown-title{
+font-family:'Great Vibes', cursive;
+font-size:52px;
+font-weight:400;
+color:#8b6a4e;
+margin:0 0 14px 0;
+letter-spacing:1px;
 }
 
-#timer{
-font-size:28px;
-letter-spacing:2px;
+.countdown-subtitle{
+font-size:11px;
+letter-spacing:4px;
+color:#a1866f;
+margin:0 0 50px 0;
+text-transform:uppercase;
 }
 
 .countdown-container{
 display:flex;
 justify-content:center;
-gap:40px;
+align-items:center;
+gap:0;
 flex-wrap:wrap;
 }
 
 .time-box{
 text-align:center;
+padding:0 40px;
 }
 
 .time-box span{
-font-size:48px;
-font-weight:600;
+font-family:'Great Vibes', cursive;
+font-size:72px;
+font-weight:400;
 display:block;
+color:#8b6a4e;
+line-height:1;
 }
 
 .time-box p{
-margin:5px 0 0 0;
-font-size:16px;
-letter-spacing:2px;
+margin:10px 0 0 0;
+font-size:10px;
+letter-spacing:4px;
+color:#a1866f;
+text-transform:uppercase;
+}
+
+.time-sep{
+font-size:36px;
+color:#cbbfb3;
+line-height:1;
+padding-bottom:20px;
 }
 
 @media (max-width: 600px){
-
-.countdown-container{
-gap:20px;
+.time-box{
+padding:0 18px;
 }
-
 .time-box span{
-font-size:36px;
+font-size:52px;
 }
-
-.time-box p{
-font-size:14px;
+.time-sep{
+font-size:24px;
 }
-
 }
 
 #intro{

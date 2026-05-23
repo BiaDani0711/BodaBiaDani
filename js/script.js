@@ -16,6 +16,8 @@ setInterval(function(){
 // --- Intro con vídeo ---
 const intro = document.getElementById("intro");
 const video = document.getElementById("introVideo");
+const bgMusic = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
 
 intro.addEventListener("click", function(){
   video.play();
@@ -24,10 +26,27 @@ intro.addEventListener("click", function(){
     setTimeout(function(){
       document.getElementById("intro").style.display = "none";
       document.getElementById("website").style.display = "block";
-      // Lanzar observer del timeline una vez que el website es visible
+      // Arrancar música
+      bgMusic.volume = 0.4;
+      bgMusic.play().catch(() => {});
+      musicBtn.classList.add("active");
+      // Lanzar observers
       initTimelineObserver();
     }, 1200);
   };
+});
+
+// --- Botón mute/unmute ---
+musicBtn.addEventListener("click", function(){
+  if(bgMusic.muted){
+    bgMusic.muted = false;
+    musicBtn.classList.remove("muted");
+    musicBtn.innerHTML = '<i class="fa-solid fa-music"></i>';
+  } else {
+    bgMusic.muted = true;
+    musicBtn.classList.add("muted");
+    musicBtn.innerHTML = '<i class="fa-solid fa-music-slash"></i>';
+  }
 });
 
 // --- Cambio de idioma ---

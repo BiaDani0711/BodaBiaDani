@@ -16,7 +16,7 @@ text-align:center;
 
 background:
 linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url("../images/hero.jpeg");
+url("../images/hero1.jpeg");
 
 background-size:cover;
 background-position:center;
@@ -133,12 +133,15 @@ padding-bottom:22px;
 background:#f5f0e8;
 text-align:center;
 padding:20px 20px 0;
+position:relative;
 }
 
 .separador-imagen img{
 max-width:340px;
 width:70%;
 opacity:0.9;
+-webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
 }
 
 #intro{

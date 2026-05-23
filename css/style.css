@@ -16,7 +16,7 @@ text-align:center;
 
 background:
 linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url("../images/hero1.jpeg");
+url("../images/hero.jpeg");
 
 background-size:cover;
 background-position:center;
@@ -88,6 +88,7 @@ text-transform:uppercase;
 
 .countdown-container{
 display:flex;
+flex-direction:row;
 justify-content:center;
 align-items:center;
 gap:0;
@@ -119,20 +120,25 @@ text-transform:uppercase;
 .time-sep{
 font-size:36px;
 color:#cbbfb3;
-line-height:1;
-padding-bottom:20px;
+padding-bottom:22px;
 }
 
 @media (max-width: 600px){
-.time-box{
-padding:0 18px;
+.time-box{ padding:0 16px; }
+.time-box span{ font-size:48px; }
+.time-sep{ font-size:24px; }
 }
-.time-box span{
-font-size:52px;
+
+.separador-imagen{
+background:#f5f0e8;
+text-align:center;
+padding:20px 20px 0;
 }
-.time-sep{
-font-size:24px;
-}
+
+.separador-imagen img{
+max-width:340px;
+width:70%;
+opacity:0.9;
 }
 
 #intro{

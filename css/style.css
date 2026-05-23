@@ -4,7 +4,7 @@
 --font-body: 'Playfair Display', serif;
 --color-brown: #8b6a4e;
 --color-brown-light: #a1866f;
---color-brown-dark: #6e5a47;
+--color-brown-dark: #8b6a4e;
 --color-bg-cream: #f5f0e8;
 --color-bg-warm: #f7f1ea;
 }
@@ -16,6 +16,7 @@ font-family: var(--font-body);
 text-transform: uppercase;
 letter-spacing: 1px;
 width:100%;
+color: var(--color-brown-dark);
 }
 
 /* ===================== HERO ===================== */

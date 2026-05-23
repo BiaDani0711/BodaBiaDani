@@ -473,8 +473,33 @@ margin:30px auto;
 /* ===================== TRANSPORTE Y ALOJAMIENTO ===================== */
 .travel{
 padding:110px 20px;
-background: var(--color-bg-warm);
 text-align:center;
+background-color: #f5f0e8;
+background-image:
+  repeating-linear-gradient(
+    120deg,
+    rgba(180,150,120,0.04) 0px,
+    rgba(180,150,120,0.04) 1px,
+    transparent 1px,
+    transparent 60px
+  ),
+  repeating-linear-gradient(
+    60deg,
+    rgba(180,150,120,0.04) 0px,
+    rgba(180,150,120,0.04) 1px,
+    transparent 1px,
+    transparent 60px
+  ),
+  radial-gradient(
+    ellipse at 20% 30%,
+    rgba(200,170,140,0.08) 0%,
+    transparent 60%
+  ),
+  radial-gradient(
+    ellipse at 80% 70%,
+    rgba(200,170,140,0.08) 0%,
+    transparent 60%
+  );
 }
 
 .travel-title{

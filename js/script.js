@@ -69,3 +69,41 @@ function initTimelineObserver(){
 
   items.forEach(item => observer.observe(item));
 }
+
+// --- Botón volver arriba ---
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function(){
+  if(window.scrollY > 400){
+    backToTop.classList.add("visible");
+  } else {
+    backToTop.classList.remove("visible");
+  }
+});
+
+backToTop.addEventListener("click", function(){
+  window.scrollTo({ top:0, behavior:"smooth" });
+});
+
+// --- Animación de entrada en secciones ---
+function initSectionObserver(){
+  const sections = document.querySelectorAll(".section-animate");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => observer.observe(section));
+}
+
+// Llamar al observer cuando el website es visible (tras el vídeo)
+// Sobreescribimos la función anterior para incluir ambos observers
+const _origInit = initTimelineObserver;
+initTimelineObserver = function(){
+  _origInit();
+  initSectionObserver();
+};

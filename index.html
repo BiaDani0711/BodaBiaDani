@@ -4,477 +4,305 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 <title>Bia & Dani</title>
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
-
-<div class="language-switch">
-
-<button class="lang-btn active" data-lang="es">ES</button>
-<button class="lang-btn" data-lang="pt">PT</button>
-
-</div>
 
 <body>
 
+<!-- FIX 1: language-switch movido dentro del body -->
+<div class="language-switch">
+  <button class="lang-btn active" data-lang="es">ES</button>
+  <button class="lang-btn" data-lang="pt">PT</button>
+</div>
+
 <div id="intro">
+  <video id="introVideo" preload="auto" playsinline>
+    <source src="media/CartaOpen.mp4" type="video/mp4">
+  </video>
+  <p class="open-text">
+    <span data-lang-text="es">Toca para abrir la invitación</span>
+    <span data-lang-text="pt" style="display:none;">Toca para abrir o convite</span>
+  </p>
+</div>
 
-<video id="introVideo" preload="auto" playsinline>
-<source src="media/CartaOpen.mp4" type="video/mp4">
-</video>
+<div id="website">
 
-<p class="open-text">Toca para abrir la invitación</p>
+  <section class="hero">
+    <p class="hero-top">
+      <span data-lang-text="es">Nos casamos</span>
+      <span data-lang-text="pt" style="display:none;">Vamos nos casar</span>
+    </p>
+    <h1 class="hero-names">
+      Bianca
+      <span class="amp">&</span>
+      Daniel
+    </h1>
+    <p class="hero-date">07 · 11 · 2026</p>
+    <div class="scroll-indicator" id="scrollDown">↓</div>
+  </section>
+
+  <section id="countdown" class="countdown">
+    <h2>
+      <span data-lang-text="es">Cuenta atrás para el gran día</span>
+      <span data-lang-text="pt" style="display:none;">Contagem para o grande dia</span>
+    </h2>
+    <div class="countdown-container">
+      <div class="time-box">
+        <span id="days">0</span>
+        <!-- FIX 4: etiquetas de tiempo traducibles -->
+        <p><span data-lang-text="es">días</span><span data-lang-text="pt" style="display:none;">dias</span></p>
+      </div>
+      <div class="time-box">
+        <span id="hours">0</span>
+        <p><span data-lang-text="es">horas</span><span data-lang-text="pt" style="display:none;">horas</span></p>
+      </div>
+      <div class="time-box">
+        <span id="minutes">0</span>
+        <p><span data-lang-text="es">min</span><span data-lang-text="pt" style="display:none;">min</span></p>
+      </div>
+      <div class="time-box">
+        <span id="seconds">0</span>
+        <p><span data-lang-text="es">seg</span><span data-lang-text="pt" style="display:none;">seg</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="welcome">
+    <h2 class="welcome-title">
+      <span data-lang-text="es">¡Bienvenidos!</span>
+      <span data-lang-text="pt" style="display:none;">Bem-vindos!</span>
+    </h2>
+    <p class="welcome-text">
+      <span data-lang-text="es">
+        Es un placer para nosotros invitaros a nuestra boda que tendrá lugar en el hotel Villa Aitana de Benidorm. Esperamos poder compartir este momento inolvidable con vosotros.
+      </span>
+      <span data-lang-text="pt" style="display:none;">
+        É um prazer para nós convidar-vos para o nosso casamento que terá lugar no hotel Villa Aitana em Benidorm. Esperamos poder partilhar este momento inesquecível convosco.
+      </span>
+    </p>
+  </section>
+
+  <section class="evento">
+    <h2 class="evento-title">
+      <span data-lang-text="es">La ceremonia</span>
+      <span data-lang-text="pt" style="display:none;">A cerimónia</span>
+    </h2>
+    <div class="evento-info">
+      <div class="evento-item">
+        <p>
+          <span data-lang-text="es">7 de noviembre de 2026</span>
+          <span data-lang-text="pt" style="display:none;">7 de novembro de 2026</span>
+        </p>
+        <p>16:00</p>
+        <p>
+          <span data-lang-text="es">Benidorm, Alicante, España</span>
+          <span data-lang-text="pt" style="display:none;">Benidorm, Alicante, Espanha</span>
+        </p>
+      </div>
+    </div>
+    <div class="mapa">
+      <!-- FIX 3: mapa apuntando al Hotel Villa Aitana, Benidorm -->
+      <iframe
+        src="https://www.google.com/maps?q=Melia+Villaitana+Benidorm&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FIX 2: sección programa con etiquetas correctamente cerradas -->
+  <section class="programa">
+    <h2 class="programa-title">
+      <span data-lang-text="es">Programa</span>
+      <span data-lang-text="pt" style="display:none;">Programa</span>
+    </h2>
+
+    <p class="programa-date">
+      <span data-lang-text="es">7 Noviembre 2026</span>
+      <span data-lang-text="pt" style="display:none;">7 Novembro 2026</span>
+    </p>
+
+    <div class="timeline">
+
+      <div class="timeline-item left">
+        <span class="time">16:30</span>
+        <p>
+          <span data-lang-text="es">Recepción de invitados</span>
+          <span data-lang-text="pt" style="display:none;">Receção dos convidados</span>
+        </p>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="time">17:00</span>
+        <p>
+          <span data-lang-text="es">Ceremonia</span>
+          <span data-lang-text="pt" style="display:none;">Cerimónia</span>
+        </p>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="time">18:00</span>
+        <p>
+          <span data-lang-text="es">Cóctel</span>
+          <span data-lang-text="pt" style="display:none;">Cocktail</span>
+        </p>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="time">20:00</span>
+        <p>
+          <span data-lang-text="es">Cena</span>
+          <span data-lang-text="pt" style="display:none;">Jantar</span>
+        </p>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="time">22:00</span>
+        <p>
+          <span data-lang-text="es">Fiesta</span>
+          <span data-lang-text="pt" style="display:none;">Festa</span>
+        </p>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="time">02:00</span>
+        <p>
+          <span data-lang-text="es">Fin</span>
+          <span data-lang-text="pt" style="display:none;">Fim</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="dresscode">
+    <div class="dresscode-card">
+      <h2 class="dresscode-title">Dress Code</h2>
+
+      <div class="dresscode-block">
+        <h3>
+          <span data-lang-text="es">Mujeres</span>
+          <span data-lang-text="pt" style="display:none;">Mulheres</span>
+        </h3>
+        <p>
+          <span data-lang-text="es">Vestido cocktail o formal</span>
+          <span data-lang-text="pt" style="display:none;">Vestido cocktail ou formal</span>
+        </p>
+      </div>
+
+      <div class="divider-line"></div>
+
+      <div class="dresscode-block">
+        <h3>
+          <span data-lang-text="es">Hombres</span>
+          <span data-lang-text="pt" style="display:none;">Homens</span>
+        </h3>
+        <p>
+          <span data-lang-text="es">Traje oscuro y corbata</span>
+          <span data-lang-text="pt" style="display:none;">Fato escuro e gravata</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="travel">
+    <h2 class="travel-title">
+      <span data-lang-text="es">Transporte y alojamiento</span>
+      <span data-lang-text="pt" style="display:none;">Transporte e alojamento</span>
+    </h2>
+
+    <div class="travel-grid">
+
+      <div class="travel-card">
+        <h3>🚌
+          <span data-lang-text="es">Servicio de autobús</span>
+          <span data-lang-text="pt" style="display:none;">Serviço de autocarro</span>
+        </h3>
+        <p>
+          <span data-lang-text="es">Hemos organizado un autobús para invitados.</span>
+          <span data-lang-text="pt" style="display:none;">Organizámos um autocarro para os convidados.</span>
+        </p>
+        <p>
+          <strong><span data-lang-text="es">Salida:</span><span data-lang-text="pt" style="display:none;">Saída:</span></strong> 14:30
+        </p>
+        <p>
+          <strong><span data-lang-text="es">Regreso:</span><span data-lang-text="pt" style="display:none;">Regresso:</span></strong> 02:00
+        </p>
+        <p>
+          <strong><span data-lang-text="es">Punto de encuentro:</span><span data-lang-text="pt" style="display:none;">Ponto de encontro:</span></strong> Av. Libertad 86, Elche
+        </p>
+      </div>
+
+      <div class="travel-card">
+        <h3>🏨
+          <span data-lang-text="es">Alojamiento</span>
+          <span data-lang-text="pt" style="display:none;">Alojamento</span>
+        </h3>
+        <p>
+          <span data-lang-text="es">Podéis alojaros en Meliá Villaitana con tarifa especial para invitados:</span>
+          <span data-lang-text="pt" style="display:none;">Podem ficar no Meliá Villaitana com tarifa especial para convidados:</span>
+        </p>
+        <p>
+          <a class="hotel-button"
+            href="https://events.melia.com/es/events/melia-villaitana/ENLACE-BIANCA-Y-DANIEL-DEL-7-AL-8-DE-NOVIEMBRE-2026"
+            target="_blank">
+            <span data-lang-text="es">Ver descuento para invitados</span>
+            <span data-lang-text="pt" style="display:none;">Ver tarifa especial</span>
+          </a>
+        </p>
+        <p>
+          <span data-lang-text="es">También recomendamos estas opciones cercanas:</span>
+          <span data-lang-text="pt" style="display:none;">Também recomendamos estas opções próximas:</span>
+        </p>
+        <p>
+          <a href="https://www.marriott.com/en-us/hotels/alcfp-four-points-costa-blanca-resort/overview/" target="_blank">
+            Four Points by Sheraton Costa Blanca Resort
+          </a><br>
+          <span data-lang-text="es">A 5 minutos del lugar de la boda</span>
+          <span data-lang-text="pt" style="display:none;">A 5 minutos do local do casamento</span>
+        </p>
+        <p>
+          <a href="https://hotelesposeidon.com/hotel-la-estacion" target="_blank">Hotel La Estación</a><br>
+          <span data-lang-text="es">A 10 minutos del lugar de la boda</span>
+          <span data-lang-text="pt" style="display:none;">A 10 minutos do local do casamento</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="rsvp">
+    <h2 class="rsvp-title">
+      <span data-lang-text="es">Confirma tu asistencia</span>
+      <span data-lang-text="pt" style="display:none;">Confirma a tua presença</span>
+    </h2>
+    <p class="rsvp-text">
+      <span data-lang-text="es">Nos encantará celebrar contigo este día tan especial.</span>
+      <span data-lang-text="pt" style="display:none;">Será um prazer celebrar contigo este dia tão especial.</span>
+    </p>
+    <button
+      class="rsvp-button"
+      data-tally-open="yP0jk0"
+      data-tally-layout="modal"
+      data-tally-width="700"
+      data-tally-emoji-text="💍"
+      data-tally-emoji-animation="wave">
+      <span data-lang-text="es">Responder invitación</span>
+      <span data-lang-text="pt" style="display:none;">Responder convite</span>
+    </button>
+  </section>
+
+  <script src="js/script.js"></script>
 
 </div>
 
-<div id="website"> 
+<script async src="https://tally.so/widgets/embed.js"></script>
 
-<section class="hero">
-
-<p class="hero-top">
-
-<span data-lang-text="es">Nos casamos</span>
-<span data-lang-text="pt" style="display:none;">Vamos nos casar</span>
-
-</p>
-
-<h1 class="hero-names">
-Bianca
-<span class="amp">&</span>
-Daniel
-</h1>
-
-<p class="hero-date">
-07 · 11 · 2026
-</p>
-
-<div class="scroll-indicator" id="scrollDown">
-↓
-</div>
-
-</section>
-
-<section id="countdown" class="countdown">
-
-<h2>Cuenta atrás para el gran día</h2>
-
-<div class="countdown-container">
-
-<div class="time-box">
-<span id="days">0</span>
-<p>días</p>
-</div>
-
-<div class="time-box">
-<span id="hours">0</span>
-<p>horas</p>
-</div>
-
-<div class="time-box">
-<span id="minutes">0</span>
-<p>min</p>
-</div>
-
-<div class="time-box">
-<span id="seconds">0</span>
-<p>seg</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="welcome">
-
-<h2 class="welcome-title">
-
-<span data-lang-text="es">¡Bienvenidos!</span>
-<span data-lang-text="pt" style="display:none;">Bem-vindos!</span>
-
-</h2>
-
-<p class="welcome-text">
-
-<span data-lang-text="es">
-Es un placer para nosotros invitaros a nuestra boda que tendrá lugar en el hotel Villa Aitana de Benidorm. Esperamos poder compartir este momento inolvidable con vosotros.
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-É um prazer para nós convidar-vos para o nosso casamento que terá lugar no hotel Villa Aitana em Benidorm. Esperamos poder partilhar este momento inesquecível convosco.
-</span>
-
-</p>
-
-</section>  
-
-<section class="evento">
-
-<h2 class="evento-title">
-
-<span data-lang-text="es">La ceremonia</span>
-<span data-lang-text="pt" style="display:none;">A cerimónia</span>
-
-</h2>
-
-<div class="evento-info">
-
-<div class="evento-item">
-
-<p>
-<span data-lang-text="es">7 de noviembre de 2026</span>
-<span data-lang-text="pt" style="display:none;">7 de novembro de 2026</span>
-</p>
-
-<p>16:00</p>
-
-<p>
-<span data-lang-text="es">Alicante, España</span>
-<span data-lang-text="pt" style="display:none;">Alicante, Espanha</span>
-</p>
-
-</div>
-
-</div>
-
-<div class="mapa">
-
-<iframe
-src="https://www.google.com/maps?q=alicante&output=embed"
-width="100%"
-height="350"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</div>
-
-</section>
-
-<section class="programa">
-
-<h2 class="programa-title">
-
-<span data-lang-text="es">Programa</span>
-<span data-lang-text="pt" style="display:none;">Programa</span>
-
-<p class="programa-date">
-
-<span data-lang-text="es">7 Noviembre 2026</span>
-<span data-lang-text="pt" style="display:none;">7 Novembro 2026</span>
-
-</p>
-
-<div class="timeline">
-
-<div class="timeline-item left">
-<span class="time">16:30</span>
-<p>
-<span data-lang-text="es">Recepción de invitados</span>
-<span data-lang-text="pt" style="display:none;">Receção dos convidados</span>
-</p>
-</div>
-
-<div class="timeline-item right">
-<span class="time">17:00</span>
-<p>
-<span data-lang-text="es">Ceremonia</span>
-<span data-lang-text="pt" style="display:none;">Cerimónia</span>
-</p>
-</div>
-
-<div class="timeline-item left">
-<span class="time">18:00</span>
-<p>
-<span data-lang-text="es">Cóctel</span>
-<span data-lang-text="pt" style="display:none;">Cocktail</span>
-</p>
-</div>
-
-<div class="timeline-item right">
-<span class="time">20:00</span>
-<p>
-<span data-lang-text="es">Cena</span>
-<span data-lang-text="pt" style="display:none;">Jantar</span>
-</p>
-</div>
-
-<div class="timeline-item left">
-<span class="time">22:00</span>
-<p>
-<span data-lang-text="es">Fiesta</span>
-<span data-lang-text="pt" style="display:none;">Festa</span>
-</p>
-</div>
-
-<div class="timeline-item right">
-<span class="time">02:00</span>
-<p>
-<span data-lang-text="es">Fin</span>
-<span data-lang-text="pt" style="display:none;">Fim</span>
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="dresscode">
-
-<div class="dresscode-card">
-
-<h2 class="dresscode-title">
-
-<span data-lang-text="es">Dress Code</span>
-<span data-lang-text="pt" style="display:none;">Dress Code</span>
-
-</h2>
-
-<div class="dresscode-block">
-
-<h3>
-<span data-lang-text="es">Mujeres</span>
-<span data-lang-text="pt" style="display:none;">Mulheres</span>
-</h3>
-
-<p>
-<span data-lang-text="es">Vestido cocktail o formal</span>
-<span data-lang-text="pt" style="display:none;">Vestido cocktail ou formal</span>
-</p>
-
-</div>
-
-<div class="divider-line"></div>
-
-<div class="dresscode-block">
-
-<h3>
-<span data-lang-text="es">Hombres</span>
-<span data-lang-text="pt" style="display:none;">Homens</span>
-</h3>
-
-<p>
-<span data-lang-text="es">Traje oscuro y corbata</span>
-<span data-lang-text="pt" style="display:none;">Fato escuro e gravata</span>
-</p>
-
-</div>
-
-</div>
-
-</section>  
-
-
-<section class="travel">
-
-<h2 class="travel-title">
-
-<span data-lang-text="es">Transporte y alojamiento</span>
-<span data-lang-text="pt" style="display:none;">Transporte e alojamento</span>
-
-</h2>
-
-<div class="travel-grid">
-
-
-<div class="travel-card">
-
-<h3>
-🚌
-<span data-lang-text="es">Servicio de autobús</span>
-<span data-lang-text="pt" style="display:none;">Serviço de autocarro</span>
-</h3>
-
-<p>
-<span data-lang-text="es">
-Hemos organizado un autobús para invitados.
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-Organizámos um autocarro para os convidados.
-</span>
-</p>
-
-<p>
-<strong>
-<span data-lang-text="es">Salida:</span>
-<span data-lang-text="pt" style="display:none;">Saída:</span>
-</strong>
-
-14:30
-</p>
-
-<p>
-<strong>
-<span data-lang-text="es">Regreso:</span>
-<span data-lang-text="pt" style="display:none;">Regresso:</span>
-</strong>
-
-02:00
-</p>
-
-<p>
-<strong>
-<span data-lang-text="es">Punto de encuentro:</span>
-<span data-lang-text="pt" style="display:none;">Ponto de encontro:</span>
-</strong>
-
-Av. Libertad 86, Elche
-</p>
-
-</div>
-
-
-
-<div class="travel-card">
-
-<h3>
-🏨
-<span data-lang-text="es">Alojamiento</span>
-<span data-lang-text="pt" style="display:none;">Alojamento</span>
-</h3>
-
-<p>
-<span data-lang-text="es">
-Podéis alojaros en Meliá Villaitana con tarifa especial para invitados:
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-Podem ficar no Meliá Villaitana com tarifa especial para convidados:
-</span>
-</p>
-
-<p>
-<a class="hotel-button"
-href="https://events.melia.com/es/events/melia-villaitana/ENLACE-BIANCA-Y-DANIEL-DEL-7-AL-8-DE-NOVIEMBRE-2026"
-target="_blank">
-
-<span data-lang-text="es">Ver descuento para invitados</span>
-<span data-lang-text="pt" style="display:none;">Ver tarifa especial</span>
-
-</a>
-</p>
-
-
-<p>
-<span data-lang-text="es">
-También recomendamos estas opciones cercanas:
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-Também recomendamos estas opções próximas:
-</span>
-</p>
-
-
-<p>
-
-<a href="https://www.marriott.com/en-us/hotels/alcfp-four-points-costa-blanca-resort/overview/"
-target="_blank">
-
-Four Points by Sheraton Costa Blanca Resort
-
-</a>
-
-<br>
-
-<span data-lang-text="es">
-A 5 minutos del lugar de la boda
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-A 5 minutos do local do casamento
-</span>
-
-</p>
-
-
-
-<p>
-
-<a href="https://hotelesposeidon.com/hotel-la-estacion"
-target="_blank">
-
-Hotel La Estación
-
-</a>
-
-<br>
-
-<span data-lang-text="es">
-A 10 minutos del lugar de la boda
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-A 10 minutos do local do casamento
-</span>
-
-</p>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="rsvp">
-
-<h2 class="rsvp-title">
-
-<span data-lang-text="es">
-Confirma tu asistencia
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-Confirma a tua presença
-</span>
-
-</h2>
-
-<p class="rsvp-text">
-
-<span data-lang-text="es">
-Nos encantará celebrar contigo este día tan especial.
-</span>
-
-<span data-lang-text="pt" style="display:none;">
-Será um prazer celebrar contigo este dia tão especial.
-</span>
-
-</p>
-
-<button
-class="rsvp-button"
-data-tally-open="yP0jk0"
-data-tally-layout="modal"
-data-tally-width="700"
-data-tally-emoji-text="💍"
-data-tally-emoji-animation="wave">
-
-<span data-lang-text="es">Responder invitación</span>
-<span data-lang-text="pt" style="display:none;">Responder convite</span>
-
-</button>
-
-</section>
-  
-
-  
-
-  
-  
-
-<script src="js/script.js"></script>
-
-</div> 
-
-<script async src="https://tally.so/widgets/embed.js"></script>  
 </body>
-
 </html>
+

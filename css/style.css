@@ -479,6 +479,13 @@ text-align:center;
 box-shadow:0 20px 40px rgba(0,0,0,0.1);
 }
 
+.dresscode-baile{
+width:60%;
+max-width:200px;
+display:block;
+margin:0 auto 10px;
+}
+
 .dresscode-title{
 font-family: var(--font-title);
 font-size:42px;

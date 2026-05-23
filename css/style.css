@@ -1,10 +1,24 @@
+/* ===================== VARIABLES GLOBALES ===================== */
+:root{
+--font-title: 'Great Vibes', cursive;
+--font-body: 'Playfair Display', serif;
+--color-brown: #8b6a4e;
+--color-brown-light: #a1866f;
+--color-brown-dark: #6e5a47;
+--color-bg-cream: #f5f0e8;
+--color-bg-warm: #f7f1ea;
+}
+
 body{
 margin:0;
 padding:0;
-font-family:'Playfair Display', serif;
+font-family: var(--font-body);
+text-transform: uppercase;
+letter-spacing: 1px;
 width:100%;
 }
 
+/* ===================== HERO ===================== */
 .hero{
 height:100vh;
 width:100%;
@@ -13,23 +27,21 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-
 background:
 linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url("../images/hero.jpeg");
-
+url("../images/hero1.png");
 background-size:cover;
 background-position:center;
-
 color:white;
 animation:heroReveal 1.6s ease;
 }
 
 .hero-names{
-font-family:'Great Vibes', cursive;
+font-family: var(--font-title);
 font-size:72px;
 line-height:1.2;
 text-align:center;
+text-transform: none;
 }
 
 .amp{
@@ -38,115 +50,19 @@ font-size:40px;
 margin:5px 0;
 }
 
-.hero h1{
-font-family:'Great Vibes', cursive;
-font-size:72px;
-margin-bottom:10px;
-letter-spacing:2px;
-}
-
-.hero p{
-font-size:20px;
-letter-spacing:3px;
-text-transform:uppercase;
-}
-
 .hero-top{
-font-size:14px;
+font-size:13px;
 letter-spacing:4px;
 margin-bottom:20px;
 }
 
 .hero-date{
 margin-top:10px;
-font-size:18px;
-letter-spacing:3px;
-}
-
-.countdown{
-padding:90px 20px 60px;
-text-align:center;
-background:#f5f0e8;
-}
-
-.countdown-title{
-font-family:'Great Vibes', cursive;
-font-size:52px;
-font-weight:400;
-color:#8b6a4e;
-margin:0 0 14px 0;
-letter-spacing:1px;
-}
-
-.countdown-subtitle{
-font-size:11px;
+font-size:16px;
 letter-spacing:4px;
-color:#a1866f;
-margin:0 0 50px 0;
-text-transform:uppercase;
 }
 
-.countdown-container{
-display:flex;
-flex-direction:row;
-justify-content:center;
-align-items:center;
-gap:0;
-flex-wrap:wrap;
-}
-
-.time-box{
-text-align:center;
-padding:0 40px;
-}
-
-.time-box span{
-font-family:'Great Vibes', cursive;
-font-size:72px;
-font-weight:400;
-display:block;
-color:#8b6a4e;
-line-height:1;
-}
-
-.time-box p{
-margin:10px 0 0 0;
-font-size:10px;
-letter-spacing:4px;
-color:#a1866f;
-text-transform:uppercase;
-}
-
-.time-sep{
-font-size:36px;
-color:#cbbfb3;
-padding-bottom:22px;
-}
-
-@media (max-width: 600px){
-.time-box{ padding:0 16px; }
-.time-box span{ font-size:48px; }
-.time-sep{ font-size:24px; }
-}
-
-.separador-imagen{
-background:#f5f0e8;
-text-align:center;
-padding:0;
-margin:-30px 0;
-position:relative;
-z-index:1;
-}
-
-.separador-imagen img{
-max-width:460px;
-width:85%;
-display:block;
-margin:0 auto;
--webkit-mask-image: radial-gradient(ellipse 85% 80% at 50% 50%, black 50%, transparent 90%);
-mask-image: radial-gradient(ellipse 85% 80% at 50% 50%, black 50%, transparent 90%);
-}
-
+/* ===================== INTRO ===================== */
 #intro{
 position:fixed;
 width:100%;
@@ -171,27 +87,17 @@ box-shadow:0 20px 40px rgba(0,0,0,0.4);
 .open-text{
 margin-top:20px;
 color:white;
-font-size:14px;
-letter-spacing:1px;
+font-size:12px;
+letter-spacing:3px;
 text-align:center;
 animation:pulseText 2s infinite;
-}
-
-@keyframes pulseText{
-0%{ opacity:0.3; }
-50%{ opacity:1; }
-100%{ opacity:0.3; }
-}
-
-@keyframes heroReveal{
-0%{ opacity:0; transform:scale(1.05); }
-100%{ opacity:1; transform:scale(1); }
 }
 
 #website{
 display:none;
 }
 
+/* ===================== LANGUAGE SWITCH ===================== */
 .language-switch{
 position:fixed;
 top:20px;
@@ -210,28 +116,138 @@ background:transparent;
 padding:6px 14px;
 border-radius:20px;
 cursor:pointer;
-font-size:13px;
+font-size:11px;
+font-family: var(--font-body);
+letter-spacing:2px;
 }
 
 .lang-btn.active{
-background:#8b6a4e;
+background: var(--color-brown);
 color:white;
 }
 
+/* ===================== SCROLL INDICATOR ===================== */
 .scroll-indicator{
 position:absolute;
 bottom:30px;
 font-size:28px;
 opacity:0.8;
 animation:scrollBounce 2s infinite;
+text-transform:none;
 }
 
-@keyframes scrollBounce{
-0%{ transform:translateY(0); }
-50%{ transform:translateY(10px); }
-100%{ transform:translateY(0); }
+/* ===================== COUNTDOWN ===================== */
+.countdown{
+padding:90px 20px 60px;
+text-align:center;
+background: var(--color-bg-cream);
 }
 
+.countdown-title{
+font-family: var(--font-title);
+font-size:52px;
+font-weight:400;
+color: var(--color-brown);
+margin:0 0 14px 0;
+letter-spacing:1px;
+text-transform:none;
+}
+
+.countdown-subtitle{
+font-size:11px;
+letter-spacing:4px;
+color: var(--color-brown-light);
+margin:0 0 50px 0;
+}
+
+.countdown-container{
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+gap:0;
+flex-wrap:wrap;
+}
+
+.time-box{
+text-align:center;
+padding:0 40px;
+}
+
+.time-box span{
+font-family: var(--font-title);
+font-size:72px;
+font-weight:400;
+display:block;
+color: var(--color-brown);
+line-height:1;
+text-transform:none;
+}
+
+.time-box p{
+margin:10px 0 0 0;
+font-size:10px;
+letter-spacing:4px;
+color: var(--color-brown-light);
+}
+
+.time-sep{
+font-size:36px;
+color:#cbbfb3;
+padding-bottom:22px;
+}
+
+@media (max-width: 600px){
+.time-box{ padding:0 16px; }
+.time-box span{ font-size:48px; }
+.time-sep{ font-size:24px; }
+}
+
+/* ===================== SEPARADOR IMAGEN ===================== */
+.separador-imagen{
+background: var(--color-bg-cream);
+text-align:center;
+padding:0;
+margin:-30px 0;
+position:relative;
+z-index:1;
+}
+
+.separador-imagen img{
+max-width:460px;
+width:85%;
+display:block;
+margin:0 auto;
+-webkit-mask-image: radial-gradient(ellipse 85% 80% at 50% 50%, black 50%, transparent 90%);
+mask-image: radial-gradient(ellipse 85% 80% at 50% 50%, black 50%, transparent 90%);
+}
+
+/* ===================== WELCOME ===================== */
+.welcome{
+padding:60px 20px 110px;
+text-align:center;
+background: var(--color-bg-warm);
+}
+
+.welcome-title{
+font-family: var(--font-title);
+font-size:42px;
+margin-bottom:25px;
+color: var(--color-brown-light);
+opacity:0.9;
+text-transform:none;
+}
+
+.welcome-text{
+max-width:520px;
+margin:auto;
+font-size:14px;
+line-height:2.2;
+color: var(--color-brown-dark);
+letter-spacing:1.5px;
+}
+
+/* ===================== EVENTO / CEREMONIA ===================== */
 .evento{
 padding:100px 20px;
 text-align:center;
@@ -239,10 +255,11 @@ background:#ffffff;
 }
 
 .evento-title{
-font-family:'Great Vibes', cursive;
+font-family: var(--font-title);
 font-size:48px;
 margin-bottom:30px;
-color:#8b6a4e;
+color: var(--color-brown);
+text-transform:none;
 }
 
 .evento-info{
@@ -251,9 +268,9 @@ margin-bottom:40px;
 
 .evento-item p{
 margin:8px 0;
-font-size:18px;
-color:#6e5a47;
-letter-spacing:1px;
+font-size:13px;
+color: var(--color-brown-dark);
+letter-spacing:2px;
 }
 
 .mapa{
@@ -264,47 +281,26 @@ overflow:hidden;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-.welcome{
-padding:60px 20px 110px;
-text-align:center;
-background:#f7f1ea;
-}
-
-.welcome-title{
-font-family:'Great Vibes', cursive;
-font-size:42px;
-margin-bottom:25px;
-color:#a1866f;
-opacity:0.9;
-}
-
-.welcome-text{
-max-width:520px;
-margin:auto;
-font-size:18px;
-line-height:2;
-color:#7a6654;
-letter-spacing:0.5px;
-}
-
-/*---------------- sección programa */
+/* ===================== PROGRAMA ===================== */
 .programa{
 padding:90px 20px;
-background:#f7f1ea;
+background: var(--color-bg-warm);
 text-align:center;
 }
 
 .programa-title{
-font-family:'Great Vibes', cursive;
+font-family: var(--font-title);
 font-size:48px;
-color:#8b6a4e;
+color: var(--color-brown);
 margin-bottom:10px;
+text-transform:none;
 }
 
 .programa-date{
 margin-bottom:60px;
-color:#a1866f;
-letter-spacing:2px;
+color: var(--color-brown-light);
+letter-spacing:3px;
+font-size:12px;
 }
 
 .timeline{
@@ -328,76 +324,6 @@ position:relative;
 width:50%;
 padding:8px 20px;
 box-sizing:border-box;
-}
-
-.timeline-item.left{
-left:0;
-text-align:right;
-}
-
-.timeline-item.right{
-left:50%;
-text-align:left;
-}
-
-.timeline-item .time{
-display:block;
-font-weight:600;
-margin-bottom:5px;
-color:#8b6a4e;
-font-size:15px;
-}
-
-.timeline-item p{
-margin:0;
-color:#6e5a47;
-letter-spacing:0.8px;
-font-size:16px;
-}
-
-.timeline-item::before{
-content:"";
-position:absolute;
-top:18px;
-width:10px;
-height:10px;
-background:#8b6a4e;
-border-radius:50%;
-z-index:2;
-}
-
-.timeline-item.left::before{
-right:-5px;
-}
-
-.timeline-item.right::before{
-left:-5px;
-}
-
-@media (max-width: 768px){
-
-.timeline::before{
-left:20px;
-}
-
-.timeline-item{
-width:100%;
-padding-left:50px;
-padding-right:20px;
-margin-bottom:30px;
-text-align:left !important;
-left:0 !important;
-}
-
-.timeline-item::before{
-left:15px !important;
-right:auto;
-}
-
-}
-
-/* FIX 5: timeline items ocultos por defecto, animación solo al entrar en viewport */
-.timeline-item{
 opacity:0;
 transform:translateY(20px);
 transition:opacity 0.6s ease, transform 0.6s ease;
@@ -414,14 +340,63 @@ transform:translateY(0);
 .timeline-item:nth-child(5).visible{ transition-delay:0.6s; }
 .timeline-item:nth-child(6).visible{ transition-delay:0.75s; }
 
-@keyframes fadeUp{
-to{
-opacity:1;
-transform:translateY(0);
+.timeline-item.left{
+left:0;
+text-align:right;
+}
+
+.timeline-item.right{
+left:50%;
+text-align:left;
+}
+
+.timeline-item .time{
+display:block;
+font-weight:600;
+margin-bottom:5px;
+color: var(--color-brown);
+font-size:13px;
+letter-spacing:2px;
+}
+
+.timeline-item p{
+margin:0;
+color: var(--color-brown-dark);
+letter-spacing:1.5px;
+font-size:13px;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+top:18px;
+width:10px;
+height:10px;
+background: var(--color-brown);
+border-radius:50%;
+z-index:2;
+}
+
+.timeline-item.left::before{ right:-5px; }
+.timeline-item.right::before{ left:-5px; }
+
+@media (max-width: 768px){
+.timeline::before{ left:20px; }
+.timeline-item{
+width:100%;
+padding-left:50px;
+padding-right:20px;
+margin-bottom:30px;
+text-align:left !important;
+left:0 !important;
+}
+.timeline-item::before{
+left:15px !important;
+right:auto;
 }
 }
 
-/*---------------- sección dress code */
+/* ===================== DRESS CODE ===================== */
 .dresscode{
 padding:120px 20px;
 background:url("../images/fondo-boda.jpg") center/cover no-repeat;
@@ -441,23 +416,25 @@ box-shadow:0 20px 40px rgba(0,0,0,0.1);
 }
 
 .dresscode-title{
-font-family:'Great Vibes', cursive;
+font-family: var(--font-title);
 font-size:42px;
-color:#8b6a4e;
+color: var(--color-brown);
 margin-bottom:30px;
+text-transform:none;
 }
 
 .dresscode-block h3{
-font-family:'Great Vibes', cursive;
+font-family: var(--font-title);
 font-size:28px;
-color:#8b6a4e;
+color: var(--color-brown);
 margin-bottom:10px;
+text-transform:none;
 }
 
 .dresscode-block p{
-color:#6e5a47;
-font-size:16px;
-letter-spacing:1px;
+color: var(--color-brown-dark);
+font-size:13px;
+letter-spacing:2px;
 }
 
 .divider-line{
@@ -467,18 +444,19 @@ background:#cbbfb3;
 margin:30px auto;
 }
 
-/*---------------- sección transporte y alojamiento */
+/* ===================== TRANSPORTE Y ALOJAMIENTO ===================== */
 .travel{
 padding:110px 20px;
-background:#f7f1ea;
+background: var(--color-bg-warm);
 text-align:center;
 }
 
 .travel-title{
-font-family:'Great Vibes', cursive;
+font-family: var(--font-title);
 font-size:48px;
-color:#8b6a4e;
+color: var(--color-brown);
 margin-bottom:50px;
+text-transform:none;
 }
 
 .travel-grid{
@@ -497,18 +475,22 @@ box-shadow:0 15px 35px rgba(0,0,0,0.08);
 }
 
 .travel-card h3{
-font-size:26px;
+font-family: var(--font-body);
+font-size:16px;
+letter-spacing:2px;
 margin-bottom:20px;
-color:#8b6a4e;
+color: var(--color-brown);
 }
 
 .travel-card p{
-line-height:1.9;
-color:#6e5a47;
+line-height:2;
+color: var(--color-brown-dark);
+font-size:13px;
+letter-spacing:1px;
 }
 
 .travel-card a{
-color:#8b6a4e;
+color: var(--color-brown);
 text-decoration:none;
 font-weight:600;
 }
@@ -517,18 +499,20 @@ font-weight:600;
 display:inline-block;
 margin:20px 0;
 padding:12px 24px;
-background:#8b6a4e;
+background: var(--color-brown);
 color:white !important;
 text-decoration:none;
 border-radius:30px;
-font-size:15px;
+font-size:12px;
+letter-spacing:2px;
+font-family: var(--font-body);
 }
 
 .hotel-button:hover{
 transform:translateY(-2px);
 }
 
-/*---------------- sección formulario */
+/* ===================== RSVP ===================== */
 .rsvp{
 padding:120px 20px;
 text-align:center;
@@ -536,17 +520,20 @@ background:#ffffff;
 }
 
 .rsvp-title{
-font-family:'Great Vibes', cursive;
+font-family: var(--font-title);
 font-size:48px;
-color:#8b6a4e;
+color: var(--color-brown);
 margin-bottom:20px;
+text-transform:none;
 }
 
 .rsvp-text{
 max-width:600px;
 margin:auto;
-line-height:1.9;
-color:#6e5a47;
+line-height:2;
+color: var(--color-brown-dark);
+font-size:13px;
+letter-spacing:1.5px;
 }
 
 .rsvp-button{
@@ -554,8 +541,28 @@ margin-top:35px;
 padding:14px 34px;
 border:none;
 border-radius:30px;
-background:#8b6a4e;
+background: var(--color-brown);
 color:white;
-font-size:16px;
+font-size:12px;
+letter-spacing:3px;
+font-family: var(--font-body);
 cursor:pointer;
+}
+
+/* ===================== ANIMACIONES ===================== */
+@keyframes pulseText{
+0%{ opacity:0.3; }
+50%{ opacity:1; }
+100%{ opacity:0.3; }
+}
+
+@keyframes heroReveal{
+0%{ opacity:0; transform:scale(1.05); }
+100%{ opacity:1; transform:scale(1); }
+}
+
+@keyframes scrollBounce{
+0%{ transform:translateY(0); }
+50%{ transform:translateY(10px); }
+100%{ transform:translateY(0); }
 }

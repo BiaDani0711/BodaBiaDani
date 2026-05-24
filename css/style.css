@@ -786,3 +786,43 @@ border-color:#cbbfb3;
 background: var(--color-brown);
 color:white;
 }
+
+/* ===================== EXTRAS ===================== */
+.rsvp-note{
+max-width:500px;
+margin:15px auto 5px;
+font-size:11px;
+letter-spacing:2px;
+color: var(--color-brown-light);
+}
+
+.hotel-address{
+font-size:12px;
+letter-spacing:1px;
+color: var(--color-brown-light);
+margin:10px 0;
+}
+
+.hotel-address i{
+margin-right:5px;
+}
+
+.footer-contacto{
+margin-top:25px;
+}
+
+.footer-contacto p{
+font-size:11px;
+letter-spacing:2px;
+color: var(--color-brown-light);
+margin:6px 0;
+}
+
+.footer-contacto a{
+color: var(--color-brown);
+text-decoration:none;
+}
+
+.footer-contacto a:hover{
+text-decoration:underline;
+}

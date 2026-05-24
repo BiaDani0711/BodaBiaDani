@@ -45,7 +45,7 @@ musicBtn.addEventListener("click", function(){
   } else {
     bgMusic.muted = true;
     musicBtn.classList.add("muted");
-    musicBtn.innerHTML = '<i class="fa-solid fa-music-slash"></i>';
+    musicBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
   }
 });
 

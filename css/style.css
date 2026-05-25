@@ -219,8 +219,8 @@ max-width:460px;
 width:85%;
 display:block;
 margin:0 auto;
--webkit-mask-image: radial-gradient(ellipse 85% 80% at 50% 50%, black 50%, transparent 90%);
-mask-image: radial-gradient(ellipse 85% 80% at 50% 50%, black 50%, transparent 90%);
+-webkit-mask-image: radial-gradient(ellipse 75% 70% at 50% 50%, black 40%, transparent 85%);
+mask-image: radial-gradient(ellipse 75% 70% at 50% 50%, black 40%, transparent 85%);
 }
 
 /* Difuminado lineal vertical — para imágenes dentro de sección */
@@ -249,6 +249,7 @@ margin:0 auto 30px;
 h1, h2, h3{
 font-weight: 400;
 }
+
 .welcome{
 padding:50px 20px 110px;
 text-align:center;
@@ -794,17 +795,6 @@ margin:15px auto 5px;
 font-size:11px;
 letter-spacing:2px;
 color: var(--color-brown-light);
-}
-
-.hotel-address{
-font-size:12px;
-letter-spacing:1px;
-color: var(--color-brown-light);
-margin:10px 0;
-}
-
-.hotel-address i{
-margin-right:5px;
 }
 
 .footer-contacto{

@@ -816,3 +816,13 @@ text-decoration:none;
 .footer-contacto a:hover{
 text-decoration:underline;
 }
+.hotel-warning{
+font-size:11px;
+letter-spacing:1.5px;
+color: var(--color-brown-light);
+margin:10px 0 20px;
+line-height:1.8;
+border-left:2px solid var(--color-brown-light);
+padding-left:10px;
+text-align:left;
+}
